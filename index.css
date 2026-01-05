@@ -518,3 +518,18 @@ label input {
 .debug-toggle-label {
     text-align: right;
 }
+
+.poster p {
+    margin-top: -16px;
+    margin-left: 35px;
+}
+
+.bold span {
+    font-weight: var(--font-weight-bold);
+}
+
+.title h3 {
+    margin-top: -16px;
+    margin-left: 14px;
+    margin-bottom: 0px;
+}
