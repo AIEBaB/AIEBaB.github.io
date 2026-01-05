@@ -70,21 +70,6 @@ body {
     }
 }
 
-.poster p {
-    margin-top: -16px;
-    margin-left: 35px;
-}
-
-.bold span {
-    font-weight: var(--font-weight-bold);
-}
-
-.title h3 {
-    margin-top: -16px;
-    margin-left: 14px;
-    margin-bottom: 0px;
-}
-
 h1,
 h2,
 h3,
