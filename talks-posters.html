@@ -132,7 +132,7 @@
 
 <h2 id="talks-contributed">Contributed Talks</h2>
 
-<details>
+<details id="dalkiran">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">Deep mutational learning for effective enzyme engineering</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Alperen Dalkiran (University of Edinburgh, UK)</p>
@@ -140,7 +140,7 @@
 <p style="margin-left: 16px;">Deep learning is transforming our ability to engineer proteins by identifying the complex rules that map genotype to phenotype, reducing costly rounds of trial-and-error experimentation. In this talk, I will present our deep mutational learning system designed to accelerate enzyme optimization. We first learned a high-quality fitness landscape of peroxidase activity of human myoglobin, using a yeast display assay of more than 6,000 variants, protein language models and supervised neural networks. Using the pretrained model, we computationally screened more than 4M unseen double mutants, and selected 20 of the highest-scoring myoglobin variants for experimental validation. This approach led to a 100% validation success rate, with every tested variant showing improved peroxidase function compared to the wild type. Our best variant displayed a nearly 5-fold improvement in catalytic efficiency. Furthermore, we validated the superior performance of the three top variants in soluble form. Our work presents a robust and scalable framework for data-driven enzyme engineering. It demonstrates how protein language models can be utilized to guide the discovery of high-performance biocatalysts, which can then be leveraged to construct novel metabolic pathways. I will discuss current extensions of these technologies to design novel gene regulatory elements in cyanobacteria for environmental applications as part of the CYBER Mission Award in Engineering Biology.</p>
 </details>
 
-<details>
+<details id="cunningham">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">Generative design and construction of functional plasmids with a DNA language model</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Angus Cunningham (University College London, UK)</p>
@@ -148,7 +148,7 @@
 <p style="margin-left: 16px;">DNA language models are emerging as a new approach for biological sequence generation, but their practical capabilities remain unclear. In this work, we explore whether such models can move beyond producing plausible DNA sequences to generating plasmids that are experimentally testable. We focus on Escherichia coli plasmids as a tractable system and present an end-to-end workflow spanning large-scale plasmid data curation, model fine-tuning, sequence generation, and bioinformatic screening. Using a GPT-style DNA language model, we generate synthetic plasmid backbones under both minimal and function-conditioned prompts, followed by stringent filtering to identify viable candidates. Selected designs were synthesised and evaluated in vivo, assessing growth, antibiotic resistance, and reporter expression. This work aims to probe the current limits of DNA language models and highlight both their potential and constraints as tools for generative biological design.</p>
 </details>
 
-<details>
+<details id="merzbacher">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">Computational inference of complex feedstock composition</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Charlotte Merzbacher (Differential Biology GmBH, Germany)</p>
@@ -156,7 +156,7 @@
 <p style="margin-left: 16px;">The rise of antibiotic resistance poses a significant global health threat, necessitating innovative solutions like phage therapy. Phages, viruses that target specific bacteria, offer a promising alternative due to their inexhaustible evolution potential, specificity and synergy with most antibiotics. However, two main challenges hinder their efficacy: the time-intensive process of identifying suitable phages for infections and the rapid development of bacterial resistance. My project addresses these challenges through leveraging the advances in synthetic biology and an evolution-aware machine learning framework. The latter incorporates protein language models, phage-host interaction classifiers and evolutionary algorithms to design improved receptor-binding proteins, which are key determinants of phage infectivity and host range. The resulting databases and models aid in the transition from the current empirical phage screening methods toward knowledge-driven bio design of engineered phages with improved and adaptable antibacterial activity.</p>
 </details>
 
-<details>
+<details id="najarro">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">Reprogramming Development through Morphogenetic Perturbations</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Elias Najarro (IT University of Copenhagen, Denmark)</p>
@@ -164,7 +164,7 @@
 <p style="margin-left: 16px;">Developmental systems rely on a variety of mechanisms to robustly produce their target morphologies. One such mechanism is morphogenetic gradients: non-uniform concentrations of biomolecules that scaffold patterning. We first present a computational model showing how morphogenetic gradients enable symmetry breaking in isotropic, purely local developmental programs. We then demonstrate how morphogenetic fields can be hijacked to steer development toward novel patterns through targeted perturbations—without modifying the developmental rules themselves.</p>
 </details>
 
-<details>
+<details id="kubaczka">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">Iterative NAND Hybrid Riboswitch Design by Deep Batch Bayesian Optimization</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Erik Kubaczka (TU Darmstadt, Germany)</p>
@@ -172,7 +172,7 @@
 <p style="margin-left: 16px;">Designing large genetic circuits requires genetic regulatory devices that perform complex logic operations without placing an excessive metabolic burden on the host. Hybrid riboswitches are synthetically enhanced, compact RNA elements (less than 100 nucleotides) that form a tertiary structure and can specifically bind multiple different target molecules. They can be used to design genetic regulators that emulate Boolean logic. However, their functionality is sensitive to even single-nucleotide sequence changes, posing a challenge to targeted engineering. This study's goal is to design 2-input hybrid riboswitches that emulate Boolean NAND logic in yeast. We therefore developed a novel sequence design framework that combines in vivo screenings with uncertainty-aware batch Bayesian optimization, enabling score-driven sequence design. Through an initial screening, we discovered a hybrid riboswitch exhibiting NAND behavior. We then further engineered the riboswitch sequence by iteratively refining it in a design-build-test-learn (DBTL) cycle. Core to this is Bayesian optimization with an ensemble sequence-to-function surrogate trained on in vivo characterization data and pre-trained on custom riboswitch sequencing data. Ultimately, the hybrid riboswitch exhibits near digital NAND behavior. With its focus on model-based and score-driven design, our proposed method can complement experiment-driven approaches by enabling fine-grained adaptation of functionality, including constructs sensitive to single-nucleotide changes.</p>
 </details>
 
-<details>
+<details id="burridge">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">Development of an AI-Native Open Data Lakehouse for Automated Synthetic Biology</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Matt Burridge (Newcastle University, UK)</p>
@@ -180,7 +180,7 @@
 <p style="margin-left: 16px;">Synthetic Biology is a highly interdisciplinary field that generates both computational and physical experimental data. To truly understand the result of an experiment, you must integrate information from every stage of an experimental workflow. Advances in lab automation and AI-driven experimental design have increased both the scale and complexity of these workflows. Biofoundries provide integrated infrastructure to handle this, however many laboratories rely on isolated instruments and software systems that operate as disconnected silos. These systems often produce heterogeneous data formats with limited structured metadata, hindering data integration, reproducibility, and downstream computational analysis. To address this, we present a data architecture that combines RO-Crates, domain ontologies and a vendor-agnostic data lakehouse paradigm. We demonstrate this architecture through a semi-automated enzyme characterisation use case, ingesting data from a metagenomic enzyme discovery workflow, spanning computational pipelines and automated laboratory equipment. Within the lab, we developed a lightweight automation data hub for RO-Crate ingestion, a Rust-based library (ro-crate-rs), and a labware barcoding system to capture provenance during both automated and manual work that is backed by PROV-O based data models. This open-source, vendor-independent approach enables robust, trustworthy, machine-readable wet-lab datasets that can be integrated with computational data to support future engineering biology workflows.</p>
 </details>
 
-<details>
+<details id="curnow">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">Protein design enables highly accurate sequence-to-expression models for an integral membrane protein</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Paul Curnow (University of Bristol, UK)</p>
@@ -188,7 +188,7 @@
 <p style="margin-left: 16px;">The recombinant expression of integral membrane proteins is a major bottleneck across the biosciences. This includes industrial and academic research in bioengineering and synthetic biology. Computational sequence-to-expression models would be potentially transformative in addressing this challenge but the data needed to build such models is absent. Here, we describe a novel approach to generating ML-ready expression data that exploits membrane protein libraries derived from computational sequence design. We determine the recombinant expression phenotype of this library in E. coli, obtain gene sequences exhibiting high or low expression, and use this new dataset to develop very accurate predictive classifiers. We find that these sequence data are compatible with different embeddings and ML architectures, including explainable models, and use feature analysis to reveal that particular amino acid residues exert a strong influence on recombinant protein production. This residue-level insight is validated experimentally via model-guided engineering of membrane protein expression levels. While the results presented here are specific to our training data and conditions, we propose that similar methods could be applied to other membrane proteins to derive a general model of the expression fitness landscape in common recombinant chassis.</p>
 </details>
 
-<details>
+<details id="nemeth">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">Upscaling Bacteriophage Therapy: AI and synthetic biology driven framework</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Victor Németh (Ghent University, Belgium)</p>
@@ -198,7 +198,7 @@
 
 <h2 id="talks-translation-impact">Translation and Impact</h2>
 
-<details>
+<details id="gribben">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">FateView: AI-Powered, non-destructive live cell analytics and cell fate forecasting</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Christopher Gribben (CellVoyant, UK)</p>
@@ -206,7 +206,7 @@
 <p style="margin-left: 16px;">A major bottleneck in engineering biology and cell manufacturing is that critical quality attributes (e.g., identity, state, and trajectory) are often assessed using destructive, end-point assays. This creates long feedback loops, limits the ability to intervene during culture, and increases the risk of batch failure during scale-up. Here, we present FateView, an AI-native approach for non-destructive, label-free monitoring of cell fate decisions during differentiation and manufacturing. FateView combines longitudinal in-process measurements (e.g., brightfield imaging and process metadata) with machine-learning models that first detect and segment cells, then extract post-detection morphological and dynamic features over time to predict downstream outcomes ahead of traditional QC. This approach allows earlier decisions that improve consistency, reduce cost, and support GMP-aligned manufacturing workflows.</p>
 </details>
 
-<details>
+<details id="jackson">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">TBC</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Sarah Jackson (Twist Bioscience, USA)</p>
@@ -214,7 +214,7 @@
 <p style="margin-left: 16px;">TBC.</p>
 </details>
 
-<details>
+<details id="bartoli">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">TBC</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Vittorio Bartoli (BIOHM, UK)</p>
@@ -222,7 +222,7 @@
 <p style="margin-left: 16px;">TBC.</p>
 </details>
 
-<details>
+<details id="hensen">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">AI, Engineering Biology and the BBSRC - a funder’s perspective</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Daniela Hensen (UKRI-BBSRC, UK)</p>
@@ -230,7 +230,7 @@
 <p style="margin-left: 16px;">The presentation will outline BBSRC’s approach towards support for AI, engineering biology and their convergence. We will share high level insights from our current portfolio of activities and outline our thinking for the future of the field.</p>
 </details>
 
-<details>
+<details id="kinkelin-sedgley">
 <summary>
 <h3 style="margin-top: -16px; margin-left: 16px; margin-bottom: 0px;">TBC</h3>
 <p style="margin-top: 6px; margin-left: 16px;">Kerstin Kinkelin & Kathleen Sedgley (University of Bristol, UK)</p>
